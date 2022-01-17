@@ -2,9 +2,20 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'geomaps'
+author = "ECMWF"
+import datetime
+import os
+import sys
+
+year = datetime.datetime.now().year
+if year == 2020:
+    years = "2020"
+else:
+    years = "2020-%s" % (year,)
+
+copyright = "%s, ECMWF" % (years,)
+
 
 release = '0.1'
 version = '0.1.0'
@@ -12,11 +23,13 @@ version = '0.1.0'
 # -- General configuration
 
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.todo",
+    "nbsphinx",
+    "IPython.sphinxext.ipython_directive",
+    "IPython.sphinxext.ipython_console_highlighting",
 ]
 
 intersphinx_mapping = {
