@@ -21,8 +21,7 @@ import sys
 top = os.path.realpath(os.path.dirname(os.path.dirname(__file__)))
 sys.path.insert(0, top)
 
-if True:  # Keep linters happy
-    import climetlab
+
 
 
 source_suffix = ".rst"
@@ -34,7 +33,7 @@ html_logo = "_static/logo.png"
 
 # -- Project information -----------------------------------------------------
 
-project = "CliMetLab"
+project = "ecmwf-geomaps"
 
 author = "ECMWF"
 
@@ -48,7 +47,7 @@ copyright = "%s, ECMWF" % (years,)
 
 
 # The full version, including alpha/beta/rc tags
-release = climetlab.__version__
+# release = climetlab.__version__
 
 
 # -- General configuration ---------------------------------------------------
