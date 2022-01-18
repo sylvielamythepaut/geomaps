@@ -18,6 +18,12 @@ import datetime
 import os
 import sys
 
+top = os.path.realpath(os.path.dirname(os.path.dirname(__file__)))
+sys.path.insert(0, top)
+
+if True:  # Keep linters happy
+    import climetlab
+
 
 source_suffix = ".rst"
 master_doc = "index"
@@ -28,7 +34,7 @@ html_logo = "_static/logo.png"
 
 # -- Project information -----------------------------------------------------
 
-project = "ecmwf-geomaps"
+project = "CliMetLab"
 
 author = "ECMWF"
 
@@ -41,8 +47,8 @@ else:
 copyright = "%s, ECMWF" % (years,)
 
 
-# # The full version, including alpha/beta/rc tags
-# release = climetlab.__version__
+# The full version, including alpha/beta/rc tags
+release = climetlab.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -53,17 +59,22 @@ copyright = "%s, ECMWF" % (years,)
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
+    "sphinx_panels",
     # "sphinx.ext.intersphinx",
     # "sphinx.ext.extlinks",
     # "sphinx.ext.mathjax",
+    "sphinx.ext.doctest",
     "sphinx.ext.napoleon",
+    # "sphinx.ext.viewcode", # Uncomment to add links to source code
     "sphinx.ext.todo",
     "nbsphinx",
     "IPython.sphinxext.ipython_directive",
     "IPython.sphinxext.ipython_console_highlighting",
+    "sphinx.ext.graphviz",
     # "sphinx-prompt",
     # "climetlab.sphinxext.sources",
-    # 'climetlab.sphinxext.datasets',
+    "climetlab.sphinxext.command_output",
+    "climetlab.sphinxext.module_output",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -77,33 +88,33 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "'**.ipynb_checkpoints'"
 
 # https://www.notion.so/Deepnote-Launch-Buttons-63c642a5e875463495ed2341e83a4b2a
 
-# nbsphinx_prolog = """
-# {% set docname = env.doc2path(env.docname, base=None) %}
+nbsphinx_prolog = """
+{% set docname = env.doc2path(env.docname, base=None) %}
 
-# You can run this notebook in |Binder|, in |Colab|, in |Deepnote| or in |Kaggle|.
+You can run this notebook in |Binder|, in |Colab|, in |Deepnote| or in |Kaggle|.
 
-# .. |Binder| image:: https://mybinder.org/badge.svg
-#    :target: https://mybinder.org/v2/gh/ecmwf/climetlab/master?urlpath=lab/tree/docs/{{ docname }}
-#    :alt: Binder
-#    :class: badge
+.. |Binder| image:: https://mybinder.org/badge.svg
+   :target: https://mybinder.org/v2/gh/ecmwf/climetlab/main?urlpath=lab/tree/docs/{{ docname }}
+   :alt: Binder
+   :class: cmlbadge
 
 
-# .. |Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
-#    :target: https://colab.research.google.com/github/ecmwf/climetlab/blob/master/docs/{{ docname }}
-#    :alt: Colab
-#    :class: badge
+.. |Colab| image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/ecmwf/climetlab/blob/main/docs/{{ docname }}
+   :alt: Colab
+   :class: cmlbadge
 
-# .. |Deepnote| image:: https://img.shields.io/badge/launch%20in-deepnote-blue.svg
-#    :target: https://beta.deepnote.org/launch?template=deepnote&url=https://github.com/ecmwf/climetlab/blob/master/docs/{{ docname }}
-#    :alt: Deepnote
-#    :class: badge
+.. |Deepnote| image:: https://img.shields.io/badge/launch%20in-deepnote-blue.svg
+   :target: https://beta.deepnote.org/launch?template=deepnote&url=https://github.com/ecmwf/climetlab/blob/main/docs/{{ docname }}
+   :alt: Deepnote
+   :class: cmlbadge
 
-# .. |Kaggle| image:: https://kaggle.com/static/images/open-in-kaggle.svg
-#    :target: https://kaggle.com/kernels/welcome?src=https://github.com/ecmwf/climetlab/blob/master/docs/{{ docname }}
-#    :alt: Kaggle
-#    :class: badge
+.. |Kaggle| image:: https://kaggle.com/static/images/open-in-kaggle.svg
+   :target: https://kaggle.com/kernels/welcome?src=https://github.com/ecmwf/climetlab/blob/main/docs/{{ docname }}
+   :alt: Kaggle
+   :class: cmlbadge
 
-# """
+"""  # noqa
 
 todo_include_todos = True
 
@@ -119,6 +130,8 @@ html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["static"]
+html_static_path = ["_static"]
+html_css_files = ["style.css"]
 
-html_context = {"css_files": ["_static/style.css"]}
+# See https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html
+graphviz_output_format = "svg"
