@@ -90,7 +90,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "'**.ipynb_checkpoints'"
 nbsphinx_prolog = """
 {% set docname = env.doc2path(env.docname, base=None) %}
 
-You can run this notebook in |Binder|, in |Colab||.
+You can run this notebook in |Binder|, in |Colab|.
 
 .. |Binder| image:: https://mybinder.org/badge.svg
    :target: https://mybinder.org/v2/gh/ecmwf/ecmwf-geomaps/main?urlpath=lab/tree/docs/{{ docname }}
