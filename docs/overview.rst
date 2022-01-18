@@ -7,5 +7,5 @@ Overview
 
     
 
-.. image:: _static/climetlab.svg
+.. image:: _static/logo.svg
 

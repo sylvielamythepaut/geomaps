@@ -13,8 +13,8 @@ To install ecmwf-geomaps, just run the following command:
 
   pip install ecmwf-geomaps
 
-The CliMetLab ``pip`` package has been tested successfully with the latest versions of
-its dependencies (`build logs <https://github.com/ecmwf/climetlab/actions/workflows/test-and-release.yml>`_).
+The ecmwf-geomaps ``pip`` package has been tested successfully with the latest versions of
+its dependencies (`build logs <https://github.com/ecmwf/ecmwf-geomaps/actions/workflows/test-and-release.yml>`_).
 
 Conda install
 -------------
@@ -26,7 +26,7 @@ No conda package has been created yet.
 
   Mixing ``pip`` and ``conda`` could create some dependencies issues,
   we recommend installing as many dependencies as possible with conda,
-  then install CliMetLab with ``pip``, `as recommended by the anaconda team
+  then install ecmwf-geomaps with ``pip``, `as recommended by the anaconda team
   <https://www.anaconda.com/blog/using-pip-in-a-conda-environment>`_.
 
 
