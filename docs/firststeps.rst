@@ -15,5 +15,5 @@ So, let's start with plotting a simple map:
     geomap.coastlines(land_colour="grey")
     geomap.show()
 
-.. image:: _static/example-plots/firststeps-coast.png
+.. image:: _static/examples/firststeps-coastlines.png
   :width: 100%
