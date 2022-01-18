@@ -20,7 +20,7 @@ Conda install
 -------------
 
 No conda package has been created yet.
-``pip install climetlab`` can be used in a conda environment.
+``pip install ecmwf-geomaps`` can be used in a conda environment.
 
 .. note::
 
@@ -36,7 +36,7 @@ Troubleshooting
 Python 3.7 or above is required
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  CliMetLab requires Python 3.7 or above. Depending on your installation,
+  ecmwf-geomaps requires Python 3.7 or above. Depending on your installation,
   you may need to substitute ``pip`` to ``pip3`` in the examples below.
 
   .. todo::
