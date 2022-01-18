@@ -11,5 +11,5 @@ markdown
 eccodes
 magics
 ecmwflibs
-pip install git+git://github.com:ecmwf/ecmwf-geomaps.git
+git+git://github.com:ecmwf/ecmwf-geomaps.git
 termcolor
