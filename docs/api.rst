@@ -1,7 +1,2 @@
-API
+Notebooks
 ===
-
-.. autosummary::
-   :toctree: generated
-
-   lumache

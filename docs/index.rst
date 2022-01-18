@@ -1,17 +1,19 @@
-Welcome to Lumache's documentation!
+Welcome to ecwmf-geomaps's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**ecwmf-geomaps** is a high-level Python library to visualise meteorological data
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`usage` section for further information 
+A lot of notebooks available in the documentation :doc:`notebooks`
+
 
 .. note::
+   This project is BETA and will be Experimental for the forseable time. Interfaces and functionality are likely to change, and the project itself may be scrapped. DO NOT use this software in any project/software that is operational.
 
-   This project is under active development.
+*License*
+
+Apache License 2.0 In applying this licence, ECMWF does not waive the privileges and immunities granted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
+   
 
 Contents
 --------
@@ -19,4 +21,4 @@ Contents
 .. toctree::
 
    usage
-   api
+   notebooks
