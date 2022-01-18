@@ -72,8 +72,8 @@ extensions = [
     "sphinx.ext.graphviz",
     # "sphinx-prompt",
     # "climetlab.sphinxext.sources",
-    "climetlab.sphinxext.command_output",
-    "climetlab.sphinxext.module_output",
+    # "climetlab.sphinxext.command_output",
+    # "climetlab.sphinxext.module_output",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
