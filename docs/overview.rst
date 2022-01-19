@@ -3,9 +3,12 @@
 Overview
 ========
 
-.. code-block:: python
+
+This package allows a quick visulisation of meteorological data.
+
+
 
     
 
-.. image:: _static/logo.svg
+.. image:: _static/nice-maps.png
 
