@@ -34,11 +34,10 @@ Documentation
    examples
 
 
-**Reference (TODO)**
+**Reference**
 
 * :doc:`reference/api`
-
-
+* 
 .. toctree::
    :maxdepth: 1
    :hidden:
