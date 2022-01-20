@@ -5,7 +5,7 @@ API reference
 .. GeoMap
 .. --------
 
-.. .. autoclass:: ecmwf.geomaps.GeoMap
+.. .. autoclass:: geomaps.GeoMap
 ..    :members:
 
 ghdghadghj
