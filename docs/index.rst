@@ -34,6 +34,19 @@ Documentation
    examples
 
 
+**Reference (TODO)**
+
+* :doc:`reference/api`
+
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Reference
+
+   reference/api
+
+
 License
 -------
 
