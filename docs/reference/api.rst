@@ -5,7 +5,6 @@ API reference
 .. GeoMap
 .. --------
 
-.. .. autoclass:: geomaps.GeoMap
+.. autoclass:: geomaps.GeoMap
 ..    :members:
 
-ghdghadghj

@@ -18,7 +18,25 @@ ARROW_STYLES = ["angle", "triangle", "triangle2", "triangle3"]
 
 
 class GeoMap:
-    """Class for designing and plotting geospatial maps."""
+    """
+    Class for designing and plotting geospatial maps.
+    
+    Parameters
+    ----------
+    arg : str
+        The arg is used for ...
+    *args
+        The variable arguments are used for ...
+    **kwargs
+        The keyword arguments are used for ...
+
+    Attributes
+    ----------
+    arg : str
+        This is where we store arg,
+    '''
+
+    """
 
     def __init__(self, *args, preset=None, **kwargs):
 
