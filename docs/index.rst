@@ -33,7 +33,7 @@ Documentation
    installing
    firststeps
    examples
-   gallery/index
+   auto_gallery/index
 
 
 **Reference**
