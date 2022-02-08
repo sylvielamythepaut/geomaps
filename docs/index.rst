@@ -22,6 +22,7 @@ Documentation
 * :doc:`installing`
 * :doc:`firststeps`
 * :doc:`examples`
+* :doc:`gallery`
 
 .. toctree::
    :maxdepth: 1
@@ -32,6 +33,7 @@ Documentation
    installing
    firststeps
    examples
+   gallery/index
 
 
 **Reference**
